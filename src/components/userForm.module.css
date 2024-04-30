@@ -1,0 +1,80 @@
+/* Styling the form */
+.userFormContainer {
+  width: fit-content;
+  margin: 0.5rem auto;
+}
+
+.userForm {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+/* Styling form groups (labels and inputs) */
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling the submit button */
+.userForm button {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.userForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the table */
+.user {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styling the table header */
+.UserTable th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Styling the table rows */
+.UserTable td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+/* Styling the table row with alternate background color */
+.UserTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Styling the edit and delete buttons */
+.UserTable button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.UserTable button:hover {
+  background-color: #ddd;
+}

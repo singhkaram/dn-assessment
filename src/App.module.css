@@ -1,0 +1,21 @@
+.resizable {
+  border: 1px solid black;
+}
+.flexContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  text-align: center;
+}
+.countContainer {
+  margin: 0.5rem 0.5rem;
+  position: absolute;
+  inset: 0 0 auto auto;
+  z-index: 2;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
