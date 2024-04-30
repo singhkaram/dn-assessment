@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import UserForm from "./components/UserForm";
 import { Resizable } from "re-resizable";
 import axios from "axios";
+import { URL } from "./config";
 
 function App() {
   const id = useId();
@@ -26,7 +27,7 @@ function App() {
   }, []);
   const handleReset = async () => {
     try {
-      const response = await axios.post("http://localhost:9000/count/reset");
+      const response = await axios.post(`${URL}/count/reset`);
       console.log(response);
       if (response.status === 200) {
       }

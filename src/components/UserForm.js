@@ -1,6 +1,7 @@
 import axios from "axios";
 import styles from "./userForm.module.css";
 import { useEffect, useState } from "react";
+import { URL } from "../config";
 
 function UserForm() {
   const [data, setData] = useState([]);
@@ -16,7 +17,7 @@ function UserForm() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:9000/users");
+      const response = await axios.get(`${URL}/users`);
       console.log(response);
       if (response.status === 200) {
         setError(null);
@@ -49,7 +50,7 @@ function UserForm() {
     try {
       if (user.editing) {
         const response = await axios.put(
-          `http://localhost:9000/users/${user._id}`,
+          `${URL}/users/${user._id}`,
           payload
         );
         console.log(response);
@@ -74,7 +75,7 @@ function UserForm() {
         );
       } else {
         const response = await axios.post(
-          "http://localhost:9000/users",
+          `${URL}/users`,
           payload
         );
         console.log(response);
@@ -89,7 +90,7 @@ function UserForm() {
   };
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:9000/users/${id}`);
+      const response = await axios.delete(`${URL}/users/${id}`);
       console.log(response);
       if (response.status === 200) {
         setError(null);
