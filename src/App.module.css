@@ -1,5 +1,6 @@
 .resizable {
   border: 1px solid black;
+  overflow: scroll;
 }
 .flexContainer {
   display: flex;

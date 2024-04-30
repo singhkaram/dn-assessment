@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:9000/count");
+    const response = await axios.get(`${URL}/count`);
     console.log(response);
     if (response.status === 200) {
     }
